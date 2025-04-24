@@ -5,7 +5,7 @@ pipeline {
         stage('Clone') {
             steps {
                 echo "Cloning repository..."
-                git 'https://github.com/MaciejSerafin/t-rex-runner.git'
+                git branch: 'gh-pages', url: 'https://github.com/MaciejSerafin/t-rex-runner.git'
             }
         }
 
